@@ -23,6 +23,7 @@ Tips：仓库内全部都是工具本没有常规本不需要默认设置定时�
     ```bash
     ql repo https://gitlab.com/SuperManito/cishanjia.git "jd_|jdCookie" "" "^jd[^_]|USER|function|sendNotify" "main"
     ```
+    外部项目用户不受本仓库开发者支持，请勿在 Arcadia 社区内提问，否则可能会被封禁！
 
 ## 功能配置
 
@@ -39,6 +40,13 @@ Tips：仓库内全部都是工具本没有常规本不需要默认设置定时�
   export WX_ADDRESS_BLOCK="" # 黑名单关键词，多个关键词用@分开
   ```
   此变量是通用的，部分脚本具有与此功能相同独特变量，将优先使用独特变量
+
+- ### 账号消息推送通知过滤
+
+  ```bash
+  epxort JD_NOTIFY_FILTER_KEYWORDS="空气" # 过滤关键词，多个用@分开
+  ```
+  只对定义了推送通知开关独特环境变量的部分脚本有效，且默认均为不推送通知，如果你在启用这些脚本的推送通知后不想看见一直抽空气啥的你可以试试它
 
 - ### 辅助工具脚本
 
